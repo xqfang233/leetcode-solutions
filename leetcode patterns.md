@@ -29,7 +29,10 @@
 ```
 same direction, compare nums[i-1] with nums[j]
 ```
-- [ ] 11. container with most water
+- [x] 11. container with most water
+```
+compare the height[l] and height[r], move the shorter one to the middle
+```
 - [ ] 42. trapping rain water
 - [ ] 283.moving zeros
 - [ ] 80. remove duplicate II
