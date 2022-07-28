@@ -39,5 +39,6 @@ compare the height[l] and height[r], move the shorter one to the middle
 - [ ] 1047. remove all adjacent duplicates in string
 
 
+# binary search
 
 
