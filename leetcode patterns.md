@@ -39,7 +39,8 @@ compare the height[l] and height[r], move the shorter one to the middle
 - [ ] 1047. remove all adjacent duplicates in string
 
 
-# binary search
+
+# Binary search
 + shrink the search range in every iteration
 + can't exclude the potential result when shrinking
 
@@ -66,6 +67,7 @@ compare the height[l] and height[r], move the shorter one to the middle
 - [ ] 852
 - [ ] 1011
 - [ ] 1292
+
 
 
 
@@ -144,3 +146,23 @@ bottom-up recursion
 - [ ] 92
 - [ ] 25
 
+
+# Stack
+
+Last in First Out (LIFO)
+
+for problems that needs to record the previous states, and fetch the top element or come back to previous state
+
++ define the stack
++ define the operations on each element
+
+
+
+- [ ] 739
+- [ ] 735
+- [ ] 20
+- [ ] 496
+- [ ] 503
+- [ ] 394
+- [ ] 636
+- [ ] 84
