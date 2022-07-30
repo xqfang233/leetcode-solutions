@@ -40,5 +40,107 @@ compare the height[l] and height[r], move the shorter one to the middle
 
 
 # binary search
++ shrink the search range in every iteration
++ can't exclude the potential result when shrinking
 
+
+## 3 templates
+### find an accurate value
++ l<=r
++ l = mid + 1, r = mid - 1
+
+
+### find a vague value
++ l < r
++ l = mid, r =mid-1 or l = mid+1, r = mid
+
+### general purpose
++ l < r-1
++ l = mid, r = mid
+
+
+## problems
+- [ ] 1062
+- [ ] 410
+- [ ] 1231
+- [ ] 852
+- [ ] 1011
+- [ ] 1292
+
+
+
+
+
+# Single Linked list
+
+## iteration
+two pointers
++ direction: same direction
++ distance between two pointers
++ the moving speed of two pointers
+
+
+eg:
+1. **find mid node of a linked list**
+
+```
+1 --> 2 --> 3 --> 4 --> 5
+i
+j
+
+
+1 --> 2 --> 3 --> 4 --> 5
+      i
+            j
+            
+1 --> 2 --> 3 --> 4 --> 5
+            i
+                        j
+                                   
+```
+
+same starting point, while fast pointer (j) still inside bound(j and j.next not null):
+  j (fast) moves 2 steps forward, i (slow) moves 1 step forward
+
+return the node that i points to
+
+
+
+2. find the last kth node
+
+```
+k = 2
+
+1 --> 2 --> 3 --> 4 --> 5
+i
+            j
+
+1 --> 2 --> 3 --> 4 --> 5
+      i
+                        j
+                        
+1 --> 2 --> 3 --> 4 --> 5
+            i
+                           j                        
+
+```
+j (fast) is k steps ahead of i (slow)
+while fast pointer (j) still inside bound(j not null), move i, j forward at same speed
+return the node that i points to
+
+
+## recursion
+bottom-up recursion
+
++ ask for next recursion level result          --
++ do something on current level of recursion     |--- 1, 3 should have same meaning
++ return result                                --
+
+
+## problems
+
+- [ ] 237. 
+- [ ] 141
+- [ ] 92
+- [ ] 25
 
