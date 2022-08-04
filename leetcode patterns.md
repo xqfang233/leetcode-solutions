@@ -202,10 +202,23 @@ many problems related to TopK
 
 
 
+# hashmap
+
+- [ ] 1
+- [ ] 3
+- [ ] 560
+- [ ] 49
+- [ ] 138
+- [ ] 340
+- [ ] 554
+- [ ] 535
 
 
 
+# BFS
 
+
+# DFS
 
 
 
