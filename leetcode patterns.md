@@ -166,3 +166,54 @@ for problems that needs to record the previous states, and fetch the top element
 - [ ] 394
 - [ ] 636
 - [ ] 84
+
+
+# Heap
+
+a complete binary tree implemented by array
+
+root = max or min value
+
+Common APIs:
+
+peek(): check the element at heap top O(1)
+
+poll(): get the element at the heap top (and reheap) O(logN)
+
+insert(): add element to heap O(logN)
+
+
+## online and offline algorithm
++ online: using heap. for streaming data, no fixed length, can be scaled on demand
++ offline: using sort. for fixed length data, need to be recalculated each time after scaling
+
+## practice
+
+many problems related to TopK
+
+
+- [ ] 215
+- [ ] 23
+- [ ] 253
+- [ ] 347
+- [ ] 295
+- [ ] 767
+- [ ] 703
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
