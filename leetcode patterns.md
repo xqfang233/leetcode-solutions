@@ -216,6 +216,30 @@ many problems related to TopK
 
 
 # BFS
+search by layer
+queue
+
+## general steps
++ initialize queue with all entry points
++ while queue not empty
+ + for each node in the queue (current)
+ + poll out element (add to result)
+ + expand the element, add children to queue in ordr
+ + go to next level
+
+
+each node enter/exit queue once O(n)
+
+
+- [ ] 101
+- [ ] 103
+- [ ] 104
+- [ ] 111
+- [ ] 199
+- [ ] 515
+- [ ] 429
+
+
 
 
 # DFS
