@@ -1,0 +1,42 @@
+### Question
+
+Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+
+An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+
+### Examples
+Example 1:
+
+Input: strs = ["eat","tea","tan","ate","nat","bat"]
+Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+Example 2:
+
+Input: strs = [""]
+Output: [[""]]
+Example 3:
+
+Input: strs = ["a"]
+Output: [["a"]]
+
+### Constraints
+1 <= strs.length <= 104
+0 <= strs[i].length <= 100
+strs[i] consists of lowercase English letters.
+
+### Solutions
+
+#### Solution 1: hashmap
+```
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        group_map = {}
+        for word in strs:
+            key = ''.join(sorted(word)) # sort the word to ensure anagrams has the same order and can be matched to the same key
+            if key not in group_map:
+                group_map[key] = [word]
+            else:
+                group_map[key].append(word)    
+        return list(group_map.values())
+```
+time complexity: O(nklog(k)), n is the length of the list, k is the averaged length for each word
+space complexity: O(n)
